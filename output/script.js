@@ -13,35 +13,44 @@
 // }
 // person.name='33'
 // normal variable 
-let b;
+// let b: string | number;
 // Array 
-let a = [];
-b = '33';
-a.push(33, true);
-// object
-let c;
-c = {
-    name: 'Mehebul Alif',
-    age: 33,
-    adult: true
+// let a: (number | string | boolean)[] = []
+// b = '33'
+// a.push(33, true)
+// // object
+// let c: {
+//     name: string,
+//     age: number,
+//     adult: boolean,
+// };
+// c = {
+//     name: 'Mehebul Alif',
+//     age: 33,
+//     adult: true
+// }
+// let myFunc = (a: number, b: number, c: string = 'true') => {
+//     // console.log(c);
+//     // console.log(`Hello ${a},${b}`);
+//     return a + b;
+// }
+// myFunc(2, 3, 'false ')
+// type stringOrNum = string | number
+// type userType = { name: string, age: number }
+// const userDetails = (id: stringOrNum, user: userType) => {
+//     console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
+// }
+// // calculator
+// let calculator:(x:number,y:number,z:string)=>number;
+// calculator=(a:number,b:number,c:string)=>{
+//     if(c ='add'){
+//         return a+b
+//     }
+//     else {
+//         return a-b
+//     }
+// }
+// console.log(calculator(3,5,'add'));
+let userDetails;
+userDetails = (id, userInfo) => {
 };
-let myFunc = (a, b, c = 'true') => {
-    // console.log(c);
-    // console.log(`Hello ${a},${b}`);
-    return a + b;
-};
-myFunc(2, 3, 'false ');
-const userDetails = (id, user) => {
-    console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
-};
-// calculator
-let calculator;
-calculator = (a, b, c) => {
-    if (c = 'add') {
-        return a + b;
-    }
-    else {
-        return a - b;
-    }
-};
-console.log(calculator(3, 5, 'add'));

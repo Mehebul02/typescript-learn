@@ -18,46 +18,51 @@
 // person.name='33'
 
 // normal variable 
-let b: string | number;
+// let b: string | number;
 
 // Array 
-let a: (number | string | boolean)[] = []
-b = '33'
-a.push(33, true)
+// let a: (number | string | boolean)[] = []
+// b = '33'
+// a.push(33, true)
 
-// object
-let c: {
-    name: string,
-    age: number,
-    adult: boolean,
-};
-c = {
-    name: 'Mehebul Alif',
-    age: 33,
-    adult: true
-}
+// // object
+// let c: {
+//     name: string,
+//     age: number,
+//     adult: boolean,
+// };
+// c = {
+//     name: 'Mehebul Alif',
+//     age: 33,
+//     adult: true
+// }
 
-let myFunc = (a: number, b: number, c: string = 'true') => {
-    // console.log(c);
-    // console.log(`Hello ${a},${b}`);
-    return a + b;
-}
-myFunc(2, 3, 'false ')
-type stringOrNum = string | number
-type userType = { name: string, age: number }
-const userDetails = (id: stringOrNum, user: userType) => {
-    console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
-}
+// let myFunc = (a: number, b: number, c: string = 'true') => {
+//     // console.log(c);
+//     // console.log(`Hello ${a},${b}`);
+//     return a + b;
+// }
+// myFunc(2, 3, 'false ')
+// type stringOrNum = string | number
+// type userType = { name: string, age: number }
+// const userDetails = (id: stringOrNum, user: userType) => {
+//     console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
+// }
 
-// calculator
+// // calculator
 
-let calculator:(x:number,y:number,z:string)=>number;
-calculator=(a:number,b:number,c:string)=>{
-    if(c ='add'){
-        return a+b
-    }
-    else {
-        return a-b
-    }
+// let calculator:(x:number,y:number,z:string)=>number;
+// calculator=(a:number,b:number,c:string)=>{
+//     if(c ='add'){
+//         return a+b
+//     }
+//     else {
+//         return a-b
+//     }
+// }
+// console.log(calculator(3,5,'add'));
+
+let userDetails:(id:number | string, userInfo:{name:string,age:number})=>void;
+userDetails=(id:number | string, userInfo:{name:string,age:number})=>{
+
 }
-console.log(calculator(3,5,'add'));
