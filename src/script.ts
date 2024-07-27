@@ -43,7 +43,8 @@ let myFunc = (a: number, b: number, c: string = 'true') => {
     return a + b;
 }
 myFunc(2, 3, 'false ')
-
-const userDetails = (id: string | number, user: { name: string, age: number }) => {
-console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
+type stringOrNum = string | number
+type userType = { name: string, age: number }
+const userDetails = (id: stringOrNum, user: userType) => {
+    console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
 }
