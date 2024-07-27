@@ -48,3 +48,16 @@ type userType = { name: string, age: number }
 const userDetails = (id: stringOrNum, user: userType) => {
     console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
 }
+
+// calculator
+
+let calculator:(x:number,y:number,z:string)=>number;
+calculator=(a:number,b:number,c:string)=>{
+    if(c ='add'){
+        return a+b
+    }
+    else {
+        return a-b
+    }
+}
+console.log(calculator(3,5,'add'));

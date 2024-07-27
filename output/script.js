@@ -34,3 +34,14 @@ myFunc(2, 3, 'false ');
 const userDetails = (id, user) => {
     console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
 };
+// calculator
+let calculator;
+calculator = (a, b, c) => {
+    if (c = 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
+console.log(calculator(3, 5, 'add'));
