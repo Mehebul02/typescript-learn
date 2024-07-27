@@ -62,7 +62,23 @@
 // }
 // console.log(calculator(3,5,'add'));
 
-let userDetails:(id:number | string, userInfo:{name:string,age:number})=>void;
-userDetails=(id:number | string, userInfo:{name:string,age:number})=>{
+// let userDetails:(id:number | string, userInfo:{name:string,age:number})=>void;
+// userDetails=(id:number | string, userInfo:{name:string,age:number})=>{
 
+// }
+
+class player {
+    name: string;
+    age: number;
+    country: string
+
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing!`);
+    }
 }
+const mehebul = new player('Mehebul ',44,'Bangladesh')

@@ -51,6 +51,17 @@
 //     }
 // }
 // console.log(calculator(3,5,'add'));
-let userDetails;
-userDetails = (id, userInfo) => {
-};
+// let userDetails:(id:number | string, userInfo:{name:string,age:number})=>void;
+// userDetails=(id:number | string, userInfo:{name:string,age:number})=>{
+// }
+class player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing!`);
+    }
+}
+const mehebul = new player('Mehebul ', 44, 'Bangladesh');
