@@ -18,28 +18,32 @@
 // person.name='33'
 
 // normal variable 
-let b:string | number;
+let b: string | number;
 
 // Array 
-let a:(number |string|boolean)[]=[]
-b='33'
-a.push(33,true)
+let a: (number | string | boolean)[] = []
+b = '33'
+a.push(33, true)
 
 // object
-let c:{
-    name:string,
-    age:number,
-    adult:boolean,
+let c: {
+    name: string,
+    age: number,
+    adult: boolean,
 };
-c={
-    name:'Mehebul Alif',
-    age:33,
-    adult:true
+c = {
+    name: 'Mehebul Alif',
+    age: 33,
+    adult: true
 }
 
-let myFunc = (a:number, b:number, c:string='true')=>{
+let myFunc = (a: number, b: number, c: string = 'true') => {
     // console.log(c);
     // console.log(`Hello ${a},${b}`);
     return a + b;
 }
-myFunc(2,3,'false ')
+myFunc(2, 3, 'false ')
+
+const userDetails = (id: string | number, user: { name: string, age: number }) => {
+console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
+}

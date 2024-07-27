@@ -31,3 +31,6 @@ let myFunc = (a, b, c = 'true') => {
     return a + b;
 };
 myFunc(2, 3, 'false ');
+const userDetails = (id, user) => {
+    console.log(`User id is ${id},name is ${user.name} and age is ${user.age}`);
+};
