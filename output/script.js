@@ -1,4 +1,3 @@
-"use strict";
 // function sum(a:number,b:number){
 //     return a+b
 // }
@@ -54,14 +53,10 @@
 // let userDetails:(id:number | string, userInfo:{name:string,age:number})=>void;
 // userDetails=(id:number | string, userInfo:{name:string,age:number})=>{
 // }
-class player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing!`);
-    }
-}
-const mehebul = new player('Mehebul ', 44, 'Bangladesh');
+import { player } from './classes/player.js';
+const mehebul = new player('Mehebul ', 21, 'Bangladesh');
+const somrat = new player('Somrat', 22, 'Bangladesh');
+console.log(mehebul);
+const players = [];
+players.push(mehebul);
+players.push(somrat);

@@ -67,18 +67,13 @@
 
 // }
 
-class player {
-    name: string;
-    age: number;
-    country: string
+import {player} from './classes/player.js'
 
-    constructor(n: string, a: number, c: string) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing!`);
-    }
-}
-const mehebul = new player('Mehebul ',44,'Bangladesh')
+const mehebul = new player('Mehebul ',21,'Bangladesh')
+const somrat = new player('Somrat',22,'Bangladesh')
+
+console.log(mehebul);
+
+const players:player[]=[]
+players.push(mehebul)
+players.push(somrat)
